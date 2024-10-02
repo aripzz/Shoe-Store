@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F8F9FD]">
+    <div class="flex">
+        <div class="flex flex-col min-h-screen bg-white w-[370px]">
+            <div class="flex items-center p-[40px]">
+                <img src="assets/logo.png" alt="Logo" class="w-[52px] h-[50px] mr-4">
+                <div>
+                    <h3 class="text-lg font-semibold">Shoe Store</h3>
+                    <p class="text-[#9E9E9E] text-sm">Comfortable on the feet</p>
+                </div>
+            </div>
+            <hr>
+            <div id="menu" class="flex-grow text-[#686C6F] *">
+                <ul class="mt-[40px] space-y-2">
+                    <li
+                        class="relative flex items-center group bg-gradient-to-r from-[#D4DBFF] to-[#F3F5FF] h-[47px] w-full">
+                        <div class="absolute w-[6px] h-full rounded-r-lg bg-[#2579D1]"></div>
+                        <img src="assets/marketplace-Icon.png" class="w-6 h-6 mr-[18px] ml-[40px]"
+                            alt="Marketplace Logo">
+                        <a href="#" class="text-lg text-[#2579D1]">Marketplace</a>
+                    </li>
+                    <li class="relative flex items-center group h-[47px] w-full">
+                        <div class="absolute w-[6px] h-full rounded-r-lg"></div>
+                        <img src="assets/ExploreProduct-Icon.png" class="w-6 h-6 mr-[18px] ml-[40px]"
+                            alt="Marketplace Logo">
+                        <a href="#" class="text-lg">Explore Product</a>
+                    </li>
+                    <li class="relative flex items-center group h-[47px] w-full">
+                        <div class="absolute w-[6px] h-full rounded-r-lg"></div>
+                        <img src="assets/ShoeAuction-Icon.png" class="w-6 h-6 mr-[18px] ml-[40px]"
+                            alt="Marketplace Logo">
+                        <a href="#" class="text-lg">Shoe Auction</a>
+                    </li>
+                </ul>
+                <div id="Sub-Menu" class="mt-[60px]">
+                    <div id="title" class="pl-[40px]">
+                        <h2 class="text-lg">My Account</a>
+                    </div>
+                    <ul class="mt-[20px] space-y-2">
+                        <li class="relative flex items-center group h-[47px] w-full">
+                            <div class="absolute w-[6px] h-full rounded-r-lg"></div>
+                            <img src="assets/YourOrder-Icon.png" class="w-6 h-6 mr-[18px] ml-[40px]"
+                                alt="Marketplace Logo">
+                            <a href="#" class="text-lg">Your Order</a>
+                            <div class="absolute right-[40px] flex items-center justify-center">
+                                <div
+                                    class="bg-[#E9F6FF] text-[#2579D1] rounded-full w-[25px] h-[25px] text-center text-md">
+                                    <div>2</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative flex items-center group h-[47px] w-full">
+                            <div class="absolute w-[6px] h-full rounded-r-lg"></div>
+                            <img src="assets/Notification-Icon.png" class="mr-[18px] ml-[40px] w-6 h-6"
+                                alt="Marketplace Logo">
+                            <a href="#" class="text-lg">Notifications</a>
+                            <div
+                                class="absolute bg-[#E9F6FF] text-[#2579D1] rounded-full right-[40px] w-[25px] h-[25px] m-auto text-center text-md">
+                                9</div>
+                        </li>
+                        <li class="relative flex items-center group h-[47px] w-full">
+                            <div class="absolute w-[6px] h-full rounded-r-lg"></div>
+                            <img src="assets/FavoritesShoes-Icon.png" class="w-6 h-6 mr-[18px] ml-[40px]"
+                                alt="Marketplace Logo">
+                            <a href="#" class="text-lg">Favorites Shoes</a>
+                        </li>
+                        <li class="relative flex items-center group h-[47px] w-full">
+                            <div class="absolute w-[6px] h-full rounded-r-lg"></div>
+                            <img src="assets/Setting-Icon.png" class="w-6 h-6 mr-[18px] ml-[40px]"
+                                alt="Marketplace Logo">
+                            <a href="#" class="text-lg">Account Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="footer" class="text-[#686C6F]">
+                <ul class="space-y-2">
+                    <li class="relative flex items-center group h-[47px] w-full">
+                        <div class="absolute w-[6px] h-full rounded-r-lg"></div>
+                        <img src="assets/mode-icon.png" class="w-6 h-6 mr-[18px] ml-[40px]" alt="Marketplace Logo">
+                        <a href="#" class="text-lg">Light Mode</a>
+                        <div class="absolute bg-[#F5F5F5] rounded-full right-[40px] w-[70px] h-[30px] flex items-center justify-between p-1 cursor-pointer"
+                            id="theme-toggle">
+                            <img src="assets/moon-icon.png" alt="Moon Icon" class="w-5 h-5" id="moon-icon">
+                            <div
+                                class="bg-white w-8 h-[22px] rounded-[100px] flex items-center justify-center text-center">
+                                <img src="assets/sun-icon.png" alt="Sun Icon" class="w-5 h-5" id="sun-icon">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text-center my-[60px]">
+                    <p class="text-base text-[#C5C5C5]">©2022 Shoe Store. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-1">
+            <div class="px-[60px] pt-[40px]">
+                <div class="flex">
+                    <div class="flex items-center w-1/2">
+                        <img src="assets/profile.png" alt="" class="w-[60px] h-[60px] mr-5 rounded-full">
+                        <div>
+                            <h1 class="text-2xl/[26px] font-semibold mb-0.5">Good Morning, Yeager</h1>
+                            <p class="text-sm">Finish your profile. <a href="#" class="text-[#627EEA]">Edit now</a></p>
+                        </div>
+                    </div>
+                    <div class="relative flex items-center justify-end w-1/2">
+                        <div class="relative">
+                            <label for="default-search"
+                                class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+                            <div class="relative w-[250px]">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                    </svg>
+                                </div>
+                                <input type="search" id="default-search"
+                                    class="block w-full p-4 pl-10 text-sm text-gray-900 rounded-lg bg-white"
+                                    placeholder="Search shoes" required />
+                            </div>
+                        </div>
+                        <div class="ml-3">
+                            <div class="bg-white w-[50px] h-[50px] rounded-full flex items-center justify-center">
+                                <a href="#">
+                                    <img src="assets/Settings-Icon-Outline.png" class="w-[24px] h-[24px]"
+                                        alt="Settings Icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content" class="mt-[59px]">
+                    <div class="flex justify-between">
+                        <h1 class="text-2xl font-semibold">Exclusive Product From Nike</h1>
+                        <a href="#" class="text-[#2579D1] text-sm">View All Shoes</a>
+                    </div>
+                    <div class="flex space-x-[25px] pt-[20px]">
+                        <div class="w-1/3 bg-white p-5 rounded-3xl">
+                            <div class="bg-[#F3F3F3] rounded-3xl relative pt-[63px] pb-[15px] px-[20px] h-[180px]">
+                                <img src="assets/adidas-logo.png" alt="Adidas Logo"
+                                    class="w-[43.33px] absolute left-4 top-4">
+                                <img class="w-full" src="assets/product-1.png" alt="Sample Image">
+                            </div>
+                            <div class="px-6 py-4">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <p class="text-xs text-[#9E9E9E]">7 Colours</p>
+                                        <h3 class="font-semibold text-base mb-2">Nike Red Shoe 77</h3>
+                                    </div>
+                                    <a href="#"><img src="assets/love-active.png" class="w-[18.24px]"
+                                            alt="Love Icon"></a>
+                                </div>
+                            </div>
+                            <div class="px-6">
+                                <div class="flex justify-between items-center">
+                                    <div id="price" class="flex flex-col">
+                                        <p class="text-xs text-[#9E9E9E]">Price:</p>
+                                        <div class="font-semibold text-[#2579D1]">Rp 220.000</div>
+                                    </div>
+                                    <button class="w-[109px] h-[45px] text-white bg-[#2579D1] rounded-xl text-sm">Buy
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/3 bg-white p-5 rounded-3xl">
+                            <div class="bg-[#F3F3F3] rounded-3xl relative pt-[63px] pb-[15px] px-[20px] h-[180px]">
+                                <img src="assets/adidas-logo.png" alt="Adidas Logo"
+                                    class="w-[43.33px] absolute left-4 top-4">
+                                <img class="w-full" src="assets/product-3.png" alt="Sample Image">
+                            </div>
+                            <div class="px-6 py-4">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <p class="text-xs text-[#9E9E9E]">4 Colours</p>
+                                        <h3 class="font-semibold text-base mb-2">Nike Airforce uHigh</h3>
+                                    </div>
+                                    <a href="#"><img src="assets/love-active.png" class="w-[18.24px]" alt="Love Icon">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="px-6">
+                                <div class="flex justify-between items-center">
+                                    <div id="price" class="flex flex-col">
+                                        <p class="text-xs text-[#9E9E9E]">Price:</p>
+                                        <div class="font-semibold text-[#2579D1]">Rp 250.000</div>
+                                    </div>
+                                    <button
+                                        class="w-[109px] h-[45px] text-[#2579D1] border-[#2579D1] border-2 bg-[#F6FAFD] rounded-xl text-sm">Buy
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/3 bg-white p-5 rounded-3xl">
+                            <div class="bg-[#F3F3F3] rounded-3xl relative pt-[63px] pb-[15px] px-[20px] h-[180px]">
+                                <img src="assets/adidas-logo.png" alt="Adidas Logo"
+                                    class="w-[43.33px] absolute left-4 top-4">
+                                <img class="w-full" src="assets/product-2.png" alt="Sample Image">
+                            </div>
+                            <div class="px-6 py-4">
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <p class="text-xs text-[#9E9E9E]">2 colours</p>
+                                        <h3 class="font-semibold text-base mb-2">Nike Kiger 1 Mid</h3>
+                                    </div>
+                                    <a href="#">
+                                        <img src="assets/unlike-icon.png" class="w-[18.24px]" alt="Love Icon"></a>
+                                </div>
+                            </div>
+                            <div class="px-6">
+                                <div class="flex justify-between items-center">
+                                    <div id="price" class="flex flex-col">
+                                        <p class="text-xs text-[#9E9E9E]">Price:</p>
+                                        <div class="font-semibold text-[#2579D1]">Rp 990.000</div>
+                                    </div>
+                                    <button
+                                        class="w-[109px] h-[45px] text-[#2579D1] border-[#2579D1] border-2 bg-[#F6FAFD] rounded-xl text-sm">Buy
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-[60px]">
+                        <h1 class="text-2xl font-semibold">Best Store In This Month</h1>
+                    </div>
+                    <div class="flex space-x-[30px] pt-[20px]">
+                        <div class="w-1/2 bg-white p-6 rounded-lg">
+                            <div class="flex justify-between relative h-24">
+                                <div class="w-1/4">
+                                    <div class="bg-[#F3F3F3] h-full rounded-xl">
+                                        <img class="w-full h-full object-fill rounded-xl"
+                                            src="assets/product-best-2.png" alt="Sample Image">
+                                    </div>
+                                </div>
+                                <div class="w-2/4 mx-4">
+                                    <div class="bg-[#F3F3F3] h-full rounded-xl">
+                                        <img class="w-full h-full object-fill rounded-xl"
+                                            src="assets/product-best-main-1.png" alt="Sample Image">
+                                    </div>
+                                </div>
+                                <div class="w-1/4">
+                                    <div class="bg-[#F3F3F3] h-full rounded-xl">
+                                        <img class="w-full h-full object-fill rounded-xl"
+                                            src="assets/product-best-4.png" alt="Sample Image">
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute -bottom-[37px] left-1/2 transform -translate-x-1/2 w-[75px] h-[75px] bg-opacity-50 bg-white rounded-full p-[5px] shadow-lg">
+                                    <div class="bg-white rounded-full">
+                                        <img src="assets/logo-product-best.png" alt=""
+                                            class="rounded-full w-[68.97px] h-[68.97px]">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="mt-[52px]">
+                                <div class="flex justify-between items-center">
+                                    <div class="flex flex-col">
+                                        <div class="flex items-center font-bold text-lg">
+                                            Adidas Store
+                                            <img src="assets/check-icon.png" alt="Check Icon" class="w-[24px] h-[24px]">
+                                        </div>
+                                        <span class="text-sm">@adidasindonesia</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div class="text-[#2579D1] text-sm mr-[12px]"><a href="#">Visit Store</a></div>
+                                        <button
+                                            class="text-[#2579D1] px-[16px] py-[10px] bg-[#F6FAFD] border-2 border-[#2579D1] rounded-[100px] text-sm">Following</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="counter"
+                                class="flex justify-between mt-[34px] items-center px-[20px] bg-[#FBFBFB] py-[14px]">
+                                <div class="text-left">
+                                    <h3 class="font-bold text-base">1.569</h3>
+                                    <p class="text-[#748C9E] text-sm">Total shoes</p>
+                                </div>
+                                <div class="border-l-2 border-[#EDEDED] h-[46px] mx-4"></div>
+                                <div class="text-left">
+                                    <h3 class="font-bold text-base">5.2M</h3>
+                                    <p class="text-[#748C9E] text-sm">Total followers</p>
+                                </div>
+                                <div class="border-l-2 border-[#EDEDED] h-[46px] mx-4"></div>
+                                <div class="text-left">
+                                    <h3 class="font-bold text-base">56</h3>
+                                    <p class="text-[#748C9E] text-sm">Exclusive Shoe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/2 bg-white p-6 rounded-lg">
+                            <div class="flex justify-between relative h-24">
+                                <div class="w-1/4">
+                                    <div class="bg-[#F3F3F3] h-full rounded-xl">
+                                        <img class="w-full h-full object-fill rounded-xl"
+                                            src="assets/product-best-3.png" alt="Sample Image">
+                                    </div>
+                                </div>
+                                <div class="w-2/4 mx-4">
+                                    <div class="bg-[#F3F3F3] h-full rounded-xl">
+                                        <img class="w-full h-full object-fill rounded-xl"
+                                            src="assets/product-best-main.png" alt="Sample Image">
+                                    </div>
+                                </div>
+                                <div class="w-1/4">
+                                    <div class="bg-[#F3F3F3] h-full rounded-xl">
+                                        <img class="w-full h-full object-fill rounded-xl"
+                                            src="assets/product-best-1.png" alt="Sample Image">
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute -bottom-[37px] left-1/2 transform -translate-x-1/2 w-[75px] h-[75px] bg-opacity-50 bg-white rounded-full p-[5px] shadow-lg">
+                                    <div class="bg-white rounded-full">
+                                        <img src="assets/logo-product-best-1.png" alt=""
+                                            class="rounded-full w-[68.97px] h-[68.97px]">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="mt-[52px]">
+                                <div class="flex justify-between items-center">
+                                    <div class="flex flex-col">
+                                        <div class="flex items-center font-bold text-lg">
+                                            Puma Store
+                                            <img src="assets/check-icon.png" alt="Check Icon" class="w-[24px] h-[24px]">
+                                        </div>
+                                        <span class="text-sm">@pumaid</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div class="text-[#2579D1] text-sm mr-[12px]"><a href="#">Visit Store</a></div>
+                                        <button
+                                            class="text-white px-[16px] py-[10px] bg-[#2579D1] border-2 border-[#2579D1] rounded-[100px] text-sm">Following</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="counter"
+                                class="flex justify-between mt-[34px] items-center px-[20px] bg-[#FBFBFB] py-[14px]">
+                                <div class="text-left">
+                                    <h3 class="font-bold text-base">1.362</h3>
+                                    <p class="text-[#748C9E] text-sm">Total shoes</p>
+                                </div>
+                                <div class="border-l-2 border-[#EDEDED] h-[46px] mx-4"></div>
+                                <div class="text-left">
+                                    <h3 class="font-bold text-base">5.7M</h3>
+                                    <p class="text-[#748C9E] text-sm">Total followers</p>
+                                </div>
+                                <div class="border-l-2 border-[#EDEDED] h-[46px] mx-4"></div>
+                                <div class="text-left">
+                                    <h3 class="font-bold text-base">76</h3>
+                                    <p class="text-[#748C9E] text-sm">Exclusive Shoe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
